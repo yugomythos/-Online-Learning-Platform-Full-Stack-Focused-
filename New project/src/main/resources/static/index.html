@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>LearnHub Online Learning Platform</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="site-header">
+        <a class="brand" href="/" data-link>
+            <span class="brand-mark">LH</span>
+            <span>LearnHub</span>
+        </a>
+        <button class="nav-toggle" type="button" aria-label="Toggle navigation">Menu</button>
+        <nav class="nav-links" aria-label="Primary">
+            <a href="/" data-link>Home</a>
+            <a href="/courses" data-link>Courses</a>
+            <a href="/my-courses" data-link>My Courses</a>
+            <a href="/admin" data-link>Admin</a>
+            <button class="ghost-button" id="authButton" type="button">Sign in</button>
+        </nav>
+    </header>
+
+    <main id="app" tabindex="-1"></main>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <dialog id="authDialog" class="dialog">
+        <form method="dialog" class="dialog-card" id="authForm">
+            <button class="icon-close" value="cancel" aria-label="Close">x</button>
+            <p class="eyebrow">Mock account</p>
+            <h2>Continue learning</h2>
+            <label>
+                Name
+                <input id="authName" name="name" required placeholder="Your name">
+            </label>
+            <label>
+                Email
+                <input id="authEmail" name="email" type="email" required placeholder="you@example.com">
+            </label>
+            <button class="primary-button" value="default">Save profile</button>
+        </form>
+    </dialog>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>
